@@ -1,0 +1,10 @@
+<article class="post">
+    <header>
+        <h2 class="post__tittle">
+            <a href="{% url "blog:post" post.id %}">
+                {{ post.title }}
+            </a>
+        </h2>
+    </header>
+    <div class="post__content">{{ post.body }}</div>
+</article>

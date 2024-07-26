@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+a {
+    color: rgb(4, 117, 255);
+    text-decoration: None;
+    list-style: none;
+}
+
+a:hover {
+    color: rgb(4, 117, 255);
+    text-decoration: underline;
+}
+
+
+
+
+body {
+    background-color: rgb(237, 237, 237);
+    
+}
+
+.menu {
+   background-color: black; 
+   padding: 0 1.5rem;
+
+
+}
+
+.menu-links{
+    display: flex;
+    list-style: none;
+    padding: 1.5rem;
+
+}
+
+
+
+.menu-links a {
+    color: gray;
+    padding-left: 1.5rem;
+}
+
+
+
+
+.content {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.post {
+    background: white;
+    padding: 1.5rem;
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 90%);
+}
+
+
+
+@media (min-width: 600px) {
+    .content:not(:has(.sigle-post)) {
+      grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+    }
+  }
+
+
+
+
+
+
